@@ -1,0 +1,18 @@
+:root {
+  --paper: #FAF7F5; --ink: #3A3238; --ink2: #8B7F86; --rose: #D98BA3; --line: #EBE3E0;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #141214; --ink: #F2ECEF; --ink2: #A79CA3; --rose: #E79FB6; --line: #322D32; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: "Hiragino Sans", -apple-system, sans-serif;
+  line-height: 1.9; font-size: 16px;
+}
+main { max-width: 40rem; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+h1 { font-size: 1.6rem; line-height: 1.4; }
+h2 { font-size: 1.15rem; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+p, li { color: var(--ink); }
+.meta { color: var(--ink2); font-size: .85rem; }
+a { color: var(--rose); }
